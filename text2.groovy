@@ -26,7 +26,8 @@ pipeline {
         }
     }
     stage ('docker images'){
-    steps {
+         steps {
+    
         sh "docker images"
     }
 }
