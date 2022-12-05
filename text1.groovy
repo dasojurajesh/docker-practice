@@ -8,6 +8,15 @@ pipeline {
             sh 'ls -ltrh'
             sh ' echo "I am working"'
             }
+         }
+
+     }
+
+}
+
+
+            
+
               
          
      
