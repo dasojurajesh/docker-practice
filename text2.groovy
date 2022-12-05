@@ -16,20 +16,20 @@ pipeline {
         }
     }     
  
-    stage ('build dockerfile'){
-        steps {
+       stage ('build dockerfile'){
+            steps {
             sh "docker build -t image14 ."
         }
     }
-    stage ('docker images'){
-         steps {
+       stage ('docker images'){
+            steps {
     
-        sh "docker images"
+             sh "docker images"
     }
 }
     stage ('docker run the image'){
-    steps {
-        sh "docker run -d -p 8080:8086 image14 "
+         steps {
+            sh "docker run -d -p 8080:8086 image14 "
     }
 }
 
