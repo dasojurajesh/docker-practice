@@ -11,14 +11,10 @@ pipeline {
              withCredentials([usernamePassword(credentialsId: '509eda60-1194-4ccf-b8e7-2e5fb10e8a56', passwordVariable: 'shivani@1234', usernameVariable: 'shivani')]) {
              }
             }            
-        
          echo "repo cloned"
             sh 'ls -ltrh'
         }
-    }
-} 
-
-    
+    }     
  
     stage ('build dockerfile'){
         steps {
