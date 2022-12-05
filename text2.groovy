@@ -9,9 +9,9 @@ pipeline {
       stage('clone repo'){
         steps{
             https://github.com/dasojurajesh/docker-practice.git
-        
-      }
-        stage ('build dockerfile'){
+            }
+        }
+        stage('build dockerfile'){
             steps {
              sh "docker build -t image14 ."   
             }
