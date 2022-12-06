@@ -17,7 +17,7 @@ pipeline  {
     
        stage ('build dockerfile') {
         steps {
-            sh "docker build -t image1"
+            sh "docker build https://github.com/dasojurajesh/docker-practice.git"
         }    
         
         
