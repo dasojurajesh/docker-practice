@@ -2,7 +2,7 @@ FROM eclipse
 
 CMD ["groovysh"]
 
-ENV GROOVY_HOME /opt/groovy
+ENV GROOVY_HOME /lib/groovy
 
 RUN set -o errexit -o nounset \
     && echo "Adding groovy user and group" \
