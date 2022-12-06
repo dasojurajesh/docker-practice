@@ -1,21 +1,11 @@
-pipeline {
-    agent {
-        stages {
-            stage('printing')
-               steps {
-                sh "pwd"
-            
-               }
-        }
-       
-            image 'maven:3.8.1-adoptopenjdk-11'
-            args '-v $HOME/.m2:/root/.m2'
-        }
-    }
+pipeline  {
+    agent any
     stages {
-        stage('Build') {
+        stage('printing working directory') {
             steps {
-                sh 'mvn -B'
+                sh 'pwd'
             }
         }
+
     }
+}
